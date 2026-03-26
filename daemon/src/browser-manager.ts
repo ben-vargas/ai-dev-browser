@@ -14,14 +14,14 @@ export interface BrowserEntry {
   headless: boolean;
 }
 
-export interface BrowserSummary {
+interface BrowserSummary {
   name: string;
   type: BrowserEntry["type"];
   status: "running" | "connected" | "disconnected";
   pages: string[];
 }
 
-export interface BrowserPageSummary {
+interface BrowserPageSummary {
   id: string;
   url: string;
   title: string;
